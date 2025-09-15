@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "title": "Historicat Artifact Website",
+    "description": "A Digital Archive for Preserving History",
+    "img": "https://demoxml.com/html/maxmuseum/images/history-img.jpg",
+    "images": [
+      "https://st.ourhtmldemo.com/new/egypt/images/collection/collection-3-1.jpg",
+      "https://demoxml.com/html/maxmuseum/images/venu-3.jpg",
+      "https://st.ourhtmldemo.com/new/egypt/images/collections/collections-3-2.jpg"
+    ],
+    "tools": [
+      "React",
+      "CSS",
+      "tailwind",
+      "node.js",
+      "Mongodb"
+    ],
+    "carouselImages": [
+      "https://i.ibb.co.com/ySfdQwJ/img1.png",
+      "https://i.ibb.co.com/3MdbgDc/ig2.png"
+    ],
+    "problemsFaced": [
+      "Like functionality.",
+      "Responsive design issues on smaller devices.",
+      "Managing dynamic content efficiently."
+    ],
+    "short_description": "This platform is a historical painting platform.Through this platform you can show all the historical printings and can see",
+    "liveLink": "https://artifact-odyssey.web.app/",
+    "github": "https://github.com/Shoriful0360/Artifact-odessy-client"
+  },
+  {
+    "id": 2,
+    "title": "Visa Platform",
+    "description": "Streamlining Visa Applications with User-Centric Solutions",
+    "img": "https://www.siecindia.com/uploads/blog/blog_5ce5c01d783dce937a381408b93eb8fd_1711193649Italian-Student-Visa-Application%20(1).jpg",
+    "images": [
+      "ecommerce_home.png",
+      "ecommerce_products.png",
+      "ecommerce_cart.png"
+    ],
+    "tools": [
+      "React",
+      "tailwind",
+      "Firebase",
+      "Mongodb",
+      "Node.js"
+    ],
+    "carouselImages": [
+      "https://i.ibb.co.com/SfX2kqg/vis-2.png",
+      "https://i.ibb.co.com/PtryNbF/Screenshot-2025-01-05-082550.png"
+    ],
+    "problemsFaced": [
+      "theme control.",
+      "Apply modal.",
+      "Handling user authentication and data storage with Firebase.",
+      "Optimizing product search functionality for large datasets."
+    ],
+    "liveLink": "https://visa-navigator-36de8.web.app/",
+     "github": "https://github.com/Shoriful0360/visa-navigate-client",
+    "short_description": "This platform is a Visa buying and selling platform.Here you can buy and sell visas of all countries.Responsive for all devices"
+  },
+  {
+    "id": 3,
+    "title": "Vocabulary Website",
+    "description": "Vocabulary Vault is an interactive platform designed to help users enhance their vocabulary through engaging learning methods. Whether you're a student, a language enthusiast, or preparing for competitive exams, our website offers",
+    "img": "https://i.ibb.co.com/tTh9s862/Screenshot-2025-03-25-172158.png",
+    "images": [
+      "task_home.png",
+      "task_add.png",
+      "task_completed.png"
+    ],
+    "tools": [
+      "React",
+      "CSS",
+      "Firebase"
+    
+    ],
+    "carouselImages": [
+      "https://i.ibb.co.com/rK2kMmWr/Screenshot-2025-03-25-172243.png",
+      "https://i.ibb.co.com/SXLcZhc/ga-2.png"
+    ],
+    "problemsFaced": [
+      "I cannot use properly authentication because of it is first project use  firebase authentication",
+      "I couldn't handle it when it would tell me the pronunciation of a word when I clicked on it.",
+      "Didn't know how to use the countrip package",
+      "There was slight problem while animation"
+    ],
+    "liveLink": "https://gadgetheaven0360.netlify.app/",
+    "github": "https://github.com/Shoriful0360/Vocabulary-word",
+    "short_description": "Expand your vocabulary with accurate pronunciation, part of speech, and meaning for each word. Understand the correct usage of words in different contexts to improve communication. Get guidance on when to use a word and how it fits naturally in sentences. Enhance your speaking skills with precise pronunciation assistance. Strengthen your vocabulary and express yourself with confidence!"
+  },
+  {
+    "id": 4,
+    "title": "Tourism and travel Website",
+    "description": "I have developed a dynamic tourism website that provides engaging travel experiences and essential destination information. This project showcases my skills in web development, UI/UX design, and integrating interactive features for user engagement. ",
+    "img": "https://iili.io/2QWSmOJ.jpg",
+    "images": [
+      "task_home.png",
+      "task_add.png",
+      "task_completed.png"
+    ],
+    "tools": [
+      "React",
+      "Node.js",
+      "Express",
+      "firebase",
+      "stripe",
+      "MongoDB"
+    ],
+    "carouselImages": [
+      "https://iili.io/2QW6uQj.png",
+      "https://iili.io/2QWSmOJ.jpg"
+    ],
+    "problemsFaced": [
+      "Designing a user-friendly drag-and-drop interface.",
+      "Setting up a secure payment gateway with Stripe.",
+      "Improving app performance for large task lists."
+    ],
+    "liveLink": "https://travel-and-tourism-3987f.web.app/",
+    "github": "https://github.com/Shoriful0360/tourism-turio-client",
+    "short_description": "I have developed a dynamic tourism website that provides engaging travel experiences and essential destination information. This project showcases my skills in web development, UI/UX design, and integrating interactive features for user engagement. Adding this to my resume highlights my ability to create functional and visually appealing websites tailored to user needs."
+  }
+]
