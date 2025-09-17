@@ -45,7 +45,7 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-<div className=' bg-[#ECF0F3] font-serif'>
+<div className=' sm:px-10 bg-[#ECF0F3] font-serif'>
   <AuthProvider>
   <RouterProvider router={router}>
 

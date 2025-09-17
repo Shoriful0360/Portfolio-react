@@ -7,7 +7,7 @@ import Experience from "./Experience";
 const Resume = () => {
     const [visible,setVisible]=useState("education")
     return (
-        <div id="Resume" className="mt-4">
+        <div id="resume" className="mt-4">
            <h3 className="text-red-600 text-center">1+ Years of experiences</h3> 
            <h1 className="text-4xl font-serif font-extrabold text-center mt-4">My Resume</h1>
            {/* parents div */}

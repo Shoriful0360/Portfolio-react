@@ -4,7 +4,7 @@ import App from "../App";
 
 const Main = () => {
     return (
-        <div className="max-w-screen-2xl mx-auto">
+        <div className=" ">
         <App /> 
         <Outlet></Outlet>
         </div>

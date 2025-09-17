@@ -12,7 +12,7 @@ const skills = [
 
 export default function Fature() {
   return (
-    <div className="min-h-screen  dark:bg-gray-900 flex flex-col items-center justify-center px-6 py-12">
+    <div className="  dark:bg-gray-900 flex flex-col items-center justify-center px-6 py-12">
       <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white mb-10">
         My <span className="text-indigo-600">Experience</span>
       </h2>

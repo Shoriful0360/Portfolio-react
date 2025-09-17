@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Bolaka Restaurant (Individual Project)",
+    "images": [
+      "https://i.imghippo.com/files/juCn9407IdI.png",
+      "https://i.imghippo.com/files/UW1192rLU.png",
+      "https://i.imghippo.com/files/Fd2901vrI.png"
+    ],
+    "overview": "A modern food ordering and table booking platform where users can browse the menu, place orders, and reserve tables with real-time updates.",
+    "features": [
+      "Dynamic food menu with categories",
+      "Add to cart & order management",
+      "Real-time table booking with status updates",
+      "User authentication & profile dashboard",
+      "Review and rating functionality"
+    ],
+    "tech": ["React", "Tailwind CSS", "DaisyUI", "Firebase", "Express.js", "MongoDB","SSL-Commerse","Stripe"],
+    "challenges": [
+      {
+        "challenge": "Managing real-time table booking updates",
+        "solution": "Integrated Socket.io for live updates, ensuring instant status visibility for all users."
+      },
+      {
+        "challenge": "Authentication & secure routes",
+        "solution": "Combined Firebase Authentication with JWT to implement protected routes."
+      },
+      {
+        "challenge": "set up ssl commerse",
+        "solution": "watch youtube video and use chatgpt"
+      }
+    ],
+    "live": "https://bolaka-resturant-1727d.web.app/",
+    "github_client": "https://github.com/Shoriful0360/Bolaka-Resturant",
+    "github_server": "https://github.com/Shoriful0360/Bolaka-Resturant-server"
+  },
+  {
+    "id": 2,
+    "title": "Visa Navigator (Individual Project)",
+    "images": [
+      "https://i.ibb.co.com/PtryNbF/Screenshot-2025-01-05-082550.png",
+      "https://i.ibb.co.com/SfX2kqg/vis-2.png",
+      "https://www.siecindia.com/uploads/blog/blog_5ce5c01d783dce937a381408b93eb8fd_1711193649Italian-Student-Visa-Application%20(1).jpg"
+    ],
+    "overview": "A platform to guide users about visa requirements, application steps, and country-specific policies with search and filtering options.",
+    "features": [
+      "Country-wise visa details",
+      "Search & filter functionality",
+      "User authentication & account system",
+      "Save favorite countries feature"
+    ],
+    "tech": ["React", "Tailwind CSS", "DaisyUI", "MongoDB", "Firebase","node.js","Express.js"],
+    "challenges": [
+  {
+    "challenge": "Theme control",
+    "solution": "Implemented a theme toggle system with dark/light mode support using Tailwind and persisted user preference in local storage."
+  },
+  {
+    "challenge": "Apply modal",
+    "solution": "Created a reusable modal component with dynamic props to handle job applications and user interactions smoothly."
+  },
+  {
+    "challenge": "Handling user authentication and data storage with Firebase",
+    "solution": "Integrated Firebase Authentication for secure login and stored user data in Firestore for real-time updates."
+  },
+  {
+    "challenge": "Optimizing product search functionality for large datasets",
+    "solution": "Implemented indexed search queries with pagination and debounce logic to improve performance on large datasets."
+  }
+]
+,
+    "live": "https://visa-navigator-36de8.web.app/",
+    "github_client": "https://github.com/Shoriful0360/visa-navigate-client",
+    "github_server": "https://github.com/Shoriful0360/visa-navigate-server"
+  },
+  {
+    "id": 3,
+    "title": "Tourism & Travel (Individual Project)",
+    "images": [
+      "https://i.imghippo.com/files/noV4643oMw.png",
+      "https://iili.io/2QWSmOJ.jpg",
+ "https://iili.io/2QW6uQj.png"
+    
+    ],
+    "overview": "A travel and tourism booking platform where users can explore destinations, book packages, make payments, and share reviews.",
+    "features": [
+      "Popular destinations showcase",
+      "Dynamic travel packages with details",
+      "Booking system with online payment",
+      "Review and rating functionality"
+    ],
+    "tech": ["React", "Tailwind CSS", "Firebase", "Express.js", "MongoDB", "node.js"],
+    "challenges":[
+ {
+    "challenge": "Designing and managing dashboard",
+    "solution": "Developed a responsive dashboard with role-based access control, ensuring different users (admin, employer, job seeker) see only relevant features."
+  },
+  {
+    "challenge": "Implementing pagination for large datasets",
+    "solution": "Used server-side pagination with MongoDB queries and React state management to load data in chunks, improving performance and user experience."
+  },
+ 
+  {
+    "challenge": "Improving app performance for large task lists",
+    "solution": "Optimized rendering with React memoization and virtualization techniques to handle thousands of tasks without lag."
+  }
+]
+,
+    "live": "https://travel-and-tourism-3987f.web.app/",
+    "github_client": "https://github.com/Shoriful0360/tourism-turio-client",
+    "github_server": "https://github.com/Shoriful0360/tourism-turio-server"
+  },
+  {
+    "id": 4,
+    "title": "Job Portal (Team Project)",
+    "images": [
+      "https://i.imghippo.com/files/pR4770XLc.png"  ,          
+      "https://easy-red-jphewwt6wv.edgeone.app/Screenshot%202025-09-17%20221410.png",
+      "https://i.imghippo.com/files/fV8730Bg.png"
+    ],
+    "overview": "A team project designed to connect job seekers and employers with authentication, dashboards, job postings, and applications.",
+    "features": [
+      "User & Employer authentication system",
+      "Job posting and application flow",
+      "Profile dashboard for job seekers",
+      "Redux-based global state management"
+    ],
+    "tech": ["React", "Redux", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"],
+    "contributions": [
+      "Implemented authentication system with Firebase ",
+      "Developed profile dashboard for job seekers",
+      "Integrated Redux for application state management"
+    ],
+    "challenges": [
+     {
+    "challenge": "Managing global state with Redux",
+    "solution": "Integrated Redux for consistent global state management, reducing prop drilling and keeping authentication, job posts, and user data synchronized."
+  },
+  {
+    "challenge": "Blocking account after 3 wrong password attempts",
+    "solution": "Implemented a login security system that tracks failed attempts and blocks the account for 3 hours after 3 consecutive failures, enhancing application security."
+  },
+      {
+        "challenge": "Synchronizing job application status",
+        "solution": "Used Redux to maintain consistent global state across users."
+      }
+    ],
+    "live": "https://endgame-team-project-90b28.web.app",
+    "github_client": "https://github.com/Shoriful0360/ai-job-portal-client",
+    "github_server": "https://github.com/Shoriful0360/ai-job-portal-server"
+  }
+]

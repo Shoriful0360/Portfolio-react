@@ -1,68 +1,111 @@
+import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
-import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("#home");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
     { name: "Home", to: "#home" },
     { name: "Feature", to: "#feature" },
     { name: "Portfolio", to: "#portfolio" },
-    { name: "Resume", to: "#Resume" }
+    { name: "Resume", to: "#resume" },
   ];
 
-  const renderLink = (link) => {
-    const isActive = location.hash === link.to; // check if current hash matches
-    return (
-      <li key={link.name}>
-        <NavHashLink
-          smooth
-          to={link.to}
-          className={`uppercase text-xl px-2 py-1 transition-colors duration-300 ${
-            isActive ? "text-red-500 font-bold underline underline-offset-4 un" : "text-gray-800 hover:text-red-400"
-          }`}
-        >
-          {link.name}
-        </NavHashLink>
-      </li>
-    );
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+      const sections = links.map(link => document.querySelector(link.to));
+      sections.forEach(sec => {
+        if (sec) {
+          const top = sec.offsetTop - 100;
+          const bottom = top + sec.offsetHeight;
+          if (window.scrollY >= top && window.scrollY < bottom) {
+            setActiveSection(`#${sec.id}`);
+          }
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div id="navbar" className="fixed z-10 left-0 right-0 backdrop-blur-md px-3">
-      <div className="navbar flex justify-between items-center py-2">
-        {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <img
-            src="https://i.ibb.co/BsBy9gr/502e5265-f4e9-403f-b2c6-129ecf002eec.jpg"
-            alt=""
-            className="w-16 h-16 rounded-full object-cover object-center"
-          />
-          <span className="text-2xl font-bold hidden md:block">Shoriful</span>
-        </div>
-
-        {/* Links */}
-        <ul className="hidden lg:flex space-x-7">
-          {links.map(renderLink)}
+    <nav
+      className={`fixed  bg-white/70 top-0 left-0 right-0 z-50 px-4 py-3 transition-all duration-300 ${
+        scrolled ? "backdrop-blur-md shadow-lg" : "bg-transparent"
+      }`}
+    >
+      {/* Desktop */}
+      <div className="hidden lg:flex justify-between items-center">
+        <div className="text-2xl font-bold">Shoriful</div>
+        <ul className="flex space-x-6">
+          {links.map(link => (
+            <li key={link.name}>
+              <NavHashLink
+                smooth
+                to={link.to}
+                className={`uppercase text-lg font-medium transition-colors duration-300 ${
+                  activeSection === link.to
+                    ? "text-red-500 font-bold underline underline-offset-4"
+                    : "text-gray-800 hover:text-red-400"
+                }`}
+              >
+                {link.name}
+              </NavHashLink>
+            </li>
+          ))}
         </ul>
-
-        {/* Download Resume */}
         <a
-          download="My_Resume.pdf"
           href="https://drive.google.com/file/d/1oCH5YXUfu4jZjrcpQrV7Zura9Jt5Fyp7/view?usp=sharing"
-          className="md:text-xl hover:bg-gradient-to-r from-[#8766BA] to-[#DE647F] hover:text-white hover:animate-bounce shadow-2xl py-2 md:px-4 px-2 rounded-md text-pri font-semibold uppercase"
+          download
+          className="px-4 py-2 rounded-md font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:scale-105 transition-transform duration-300"
         >
-          Download Resume
+          Resume
         </a>
       </div>
 
-      {/* Mobile Menu */}
-      <div className="lg:hidden mt-3">
-        <ul className="menu menu-compact space-y-2">
-          {links.map(renderLink)}
-        </ul>
+      {/* Mobile: Logo + Resume + Hamburger */}
+      <div className="flex lg:hidden justify-between items-center">
+        <div className="text-2xl font-bold">Shoriful</div>
+        <a
+          href="https://drive.google.com/file/d/1oCH5YXUfu4jZjrcpQrV7Zura9Jt5Fyp7/view?usp=sharing"
+          download
+          className="px-3 py-1 rounded-md font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm"
+        >
+          Resume
+        </a>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="text-2xl font-bold focus:outline-none"
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
       </div>
-    </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <ul className="lg:hidden flex flex-col mt-3 space-y-2 text-center">
+          {links.map(link => (
+            <li key={link.name}>
+              <NavHashLink
+                smooth
+                to={link.to}
+                className={`uppercase text-lg font-medium transition-colors duration-300 ${
+                  activeSection === link.to
+                    ? "text-red-500 font-bold underline underline-offset-4"
+                    : "text-gray-800 hover:text-red-400"
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.name}
+              </NavHashLink>
+            </li>
+          ))}
+        </ul>
+      )}
+    </nav>
   );
 };
 

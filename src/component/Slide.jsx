@@ -33,7 +33,7 @@ const Slide = ({carouselImages}) => {
         {
           carouselImages?.map((img,idx)=><SwiperSlide key={idx}>
 
-            <img className='w-full h-[600px] rounded-md' src={img} alt="" />
+            <img className='w-full h-[400px] sm:h-[600px] rounded-md' src={img} alt="" />
           </SwiperSlide>)
 
         }
