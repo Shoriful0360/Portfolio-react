@@ -7,7 +7,7 @@ import Experience from "./Experience";
 const Resume = () => {
     const [visible,setVisible]=useState("education")
     return (
-       <div id="resume" className="mt-4 px-6 md:px-12 lg:px-20 font-serif">
+       <div id="resume" className="mt-20 px-6 md:px-12 lg:px-20 font-serif">
   <h3 className="text-red-600 text-center">1+ Years of Experience</h3> 
   <h1 className="text-4xl font-extrabold text-center mt-4 dark:text-white">My Resume</h1>
 

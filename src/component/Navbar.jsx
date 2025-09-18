@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
-
+import logo from '../assets/logo.png';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("#home");
@@ -43,14 +43,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 px-4 py-3 transition-all duration-300 
+      className={`fixed top-0 left-0 right-0 z-50 px-4 py-6 transition-all duration-300 
       ${scrolled ? "backdrop-blur-md shadow-lg" : "bg-transparent"}
       ${darkMode ? "bg-gray-900/90" : "bg-white/70"}`}
     >
       {/* Desktop */}
       <div className="hidden lg:flex justify-between items-center">
         <div className={`text-2xl font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>
-          Shoriful
+         <img src={logo} alt="" className="w-40 h-10 object-cover dark:invert" />
         </div>
         <ul className="flex space-x-6">
           {links.map(link => (
@@ -98,8 +98,8 @@ const Navbar = () => {
 
       {/* Mobile: Logo + Resume + Hamburger + Dark Mode */}
       <div className="flex lg:hidden justify-between items-center">
-        <div className={`text-2xl font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>
-          Shoriful
+        <div className={`text-2xl font-bold`}>
+        <img src={logo} alt="" className="w-40 h-10 object-cover" />
         </div>
         <a
           href="https://drive.google.com/file/d/1oCH5YXUfu4jZjrcpQrV7Zura9Jt5Fyp7/view?usp=sharing"

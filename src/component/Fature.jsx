@@ -12,7 +12,7 @@ const skills = [
 
 export default function Fature() {
   return (
-   <div className="dark:bg-gray-900 flex flex-col items-center justify-center px-6 py-12 min-h-screen relative overflow-hidden">
+   <div className="dark:bg-gray-900 mt-20 flex flex-col items-center justify-center px-6  relative overflow-hidden">
   {/* Floating Background Bubbles */}
   {Array.from({ length: 10 }).map((_, i) => (
     <div
@@ -31,7 +31,7 @@ export default function Fature() {
 
   {/* Section Title */}
   <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-12 text-center">
-    My <span className="text-indigo-600 dark:text-wh">Experience</span>
+    My <span className="text-indigo-600 dark:text-white">Experience</span>
   </h2>
 
   {/* Skills Grid */}

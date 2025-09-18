@@ -4,7 +4,7 @@ const Portfolio = ({ details }) => {
   return (
     <div
       id="portfolio"
-      className="mt-10 font-serif px-6 md:px-12 lg:px-20 dark:bg-gray-900 dark:text-white"
+      className="mt-20 font-serif px-6 md:px-12 lg:px-20  dark:bg-gray-900 dark:text-white"
     >
       {/* Section Header */}
       <div className="text-center space-y-3 mb-10">
