@@ -4,6 +4,7 @@ export const AuthContext=createContext()
 
 const AuthProvider = ({children}) => {
     const [fetchData,setFetchData]=useState([])
+    const[darkMode,setDarkMode]=useState(false)
 
 useEffect(()=>{
 fetch('detail.json')
@@ -12,7 +13,7 @@ fetch('detail.json')
 },[])
 
 
-    const authInfo={fetchData}
+    const authInfo={fetchData,darkMode,setDarkMode}
     
     return (
         <div>

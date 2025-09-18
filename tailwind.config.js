@@ -4,12 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+   darkMode: 'class',
   theme: {
     extend: {
       colors:{
         pri:'#FF014F',
         shado:'#ABAEB1'
-      }
+      },
+     
     },
   },
   plugins: [

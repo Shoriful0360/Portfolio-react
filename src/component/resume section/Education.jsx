@@ -14,7 +14,7 @@ const Education = () => {
           <p className="text-red-600 text-sm uppercase tracking-widest">
             2006 - 2025
           </p>
-          <h1 className="text-2xl md:text-3xl font-extrabold mb-6">
+          <h1 className="text-2xl md:text-3xl dark:text-white font-extrabold mb-6">
             Education Quality
           </h1>
 
@@ -52,7 +52,7 @@ const Education = () => {
           <p className="text-red-600 text-sm uppercase tracking-widest">
             2024 - 2025
           </p>
-          <h1 className="text-2xl md:text-3xl font-extrabold mb-6">
+          <h1 className="text-2xl md:text-3xl font-extrabold dark:text-white mb-6">
             Job Experience
           </h1>
 

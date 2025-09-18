@@ -1,15 +1,16 @@
-import { StrictMode } from 'react'
+import { StrictMode, useContext } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
 import { createBrowserRouter,  RouterProvider } from "react-router-dom";
 import Details from './component/Details.jsx';
 import Main from './layout/Main.jsx';
-import AuthProvider from './component/Provider/AuthProvider.jsx';
+import AuthProvider, { AuthContext } from './component/Provider/AuthProvider.jsx';
 import Education from './component/resume section/Education.jsx';
 import Professional from './component/resume section/Professional.jsx';
 import Experience from './component/resume section/Experience.jsx';
 import Interview from './component/resume section/Interview.jsx';
+
 
 
 const router=createBrowserRouter([
@@ -45,13 +46,10 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-<div className=' sm:px-10 bg-[#ECF0F3] font-serif'>
-  <AuthProvider>
-  <RouterProvider router={router}>
-
-</RouterProvider>
-  </AuthProvider>
-
-</div>
-  </StrictMode>,
+    <div className="sm:px-10 font-serif bg-[#ECF0F3] dark:bg-gray-900 ">
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </div>
+  </StrictMode>
 )

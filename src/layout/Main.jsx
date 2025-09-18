@@ -3,6 +3,7 @@ import App from "../App";
 
 
 const Main = () => {
+
     return (
         <div className=" ">
         <App /> 

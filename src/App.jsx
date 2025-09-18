@@ -23,29 +23,31 @@ fetch('/Project.json')
 
   return (
  
-    <div className="px-5">
-      
-      <header>
-        <Navbar></Navbar>
-        <div className="divider"></div>
-        <main className="pt-32">
-          <Home></Home>
+ <div className="px-5 font-serif bg-[#ECF0F3] dark:bg-gray-900 transition-colors duration-500">
+  <header>
+    {/* Navbar */}
+    <Navbar />
 
     <div className="divider"></div>
-    <AboutMe></AboutMe>
+<main className="pt-32">
+  <Home />
+  <div className="my-10 border-t-2 border-gray-300 dark:border-gray-600"></div>
 
-          <div className="divider"></div>
-          <Fature></Fature>
-          <div className="divider mt-10"></div> 
-    
-          <Portfolio details={details}></Portfolio>
-          <div className="divider mt-10"></div> 
-    
-      <Resume></Resume>
-    
-        </main>
-      </header>
-    </div>
+  <AboutMe />
+  <div className="my-10 border-t-2 border-gray-300 dark:border-gray-600"></div>
+
+  <Fature />
+  <div className="my-10 border-t-2 border-gray-300 dark:border-gray-600"></div>
+
+  <Portfolio details={details} />
+  <div className="my-10 border-t-2 border-gray-300 dark:border-gray-600"></div>
+
+  <Resume />
+</main>
+
+  </header>
+</div>
+
   )
 }
 
